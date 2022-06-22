@@ -1,9 +1,10 @@
-const Article = require('../src/Article.js')
+const Article = require("../src/Article.js")
+const Author = require("../src/Author.js")
 
 describe("Article", () => {
   let article
   beforeEach(() => {
-    article = new Article('My Lovely Book')
+    article = new Article('My Lovely Book', new Author("Charles Darwin", "01199873435"))
   })
 
   describe('#constructor', () => {
